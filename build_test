@@ -1,0 +1,12 @@
+#!/bin/bash
+
+HERE=$(dirname $0)
+
+#################### GYP_DEFINES ####
+DEFINES=" library=static_library
+          component=static_library
+          OS=linux
+        "
+
+# Off we go.
+GYP_DEFINES=${DEFINES} gyp --depth=${HERE} sample.gyp $*

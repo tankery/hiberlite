@@ -218,3 +218,7 @@ pip-log.txt
 *.exe
 !premake4.exe
 *.a
+
+# GYP files
+hiberlite.xcodeproj
+sample.xcodeproj
